@@ -1,0 +1,6 @@
+@mixin special{
+    //color: fuchsia;
+}
+@mixin border($px){
+    border: $px;
+}

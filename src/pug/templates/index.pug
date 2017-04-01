@@ -2,75 +2,90 @@ doctype
 html(lang="en")
     include ../partials/head.pug
     body
-        nav.main-nav
-            ul
-                li: a(href="#")
-                    img(src="CompanyLogo")
-                li: a(href="#") Panda Phone    
-                li: a(href="#") Panda Watch
-                li: a(href="#") Panda TV
-                li: a(href="#") Panda Music
-                li: a(href="#")
-                    img(src="Search")
-                li: a(href="#")
-                    img(src="Bag")    
-        section#section1.bg-odd
-            .title
-                h1 iPad Pro
-                .inf Super. Computation.
-                .inf In two sizes.
-                ul
-                    li: a(href="") Learn more >
-                    li: a(href="") Buy >
-                .img    
-                    img(src="")
-                    img(src="")
-        section#section2.bg-even
-            .title
-                .heading Apple Pencil
-                .inf for iPad Pro
-                ul
-                    li: a(href="") Learn more >
-                    li: a(href="") Buy >
-                .heading Smart Keyboard
-                .inf for iPad Pro
-                ul
-                    li: a(href="") Learn more >
-                    li: a(href="") Buy >
-        section#section3.bg-full
-            .title
-                .heading iPad
-                .inf Flat-out fun.
-                .inf Starting at $329
-                ul
-                    li: a(href="") Learn more >
-                    li: a(href="") Buy >
-            .img    
-                    img(src="") 
-        section#section4.bg-even
-            .title.title1
-                img(src="logo")
-                .heading Over a million apps designer for iPad.
-                p The App Store has over a million apps specifically designed for the big, beautiful Retina display of your iPad.* So whatever you love to do, there’s an iPad app to help you do it.
-                a Visit the App Store >
-                img(src="")
-            .title.title1
-                img(src="logo")
-                .heading Swift Playgrounds
-                p Learn serious code on your iPad. In a seriously fun way.
-                a Learn more >
-                img(src="")
-        section#section5.bg-odd
-            .title.title1
-                img(src="logo")
-                .heading More personal. More powerful. More playful.
-                p All the things you love to do are more expressive, more dynamic, and more fun than ever with iOS 10.
-                a Learn more >
-        section#section6.bg-odd
-            div
-                .heading Compare iPad models.
-                a Find the best iPad for you >
-                img(src="")
-            div
-                img(src="")
-        include ../partials/footer.pug
+        .wrapper
+            nav.main-nav.movil
+                    ul.list
+                        li: a(href="#")
+                            img(src="Menu")
+                        li: a(href="#")
+                            img(src="CompanyLogo")
+                        li: a(href="#")
+                            img(src="Bag")
+            nav.main-nav.nomovil
+                    ul.list
+                        li: a(href="#")
+                            img(src="CompanyLogo")
+                        li: a(href="#") Panda Phone    
+                        li: a(href="#") Panda Watch
+                        li: a(href="#") Panda TV
+                        li: a(href="#") Panda Music
+                        li: a(href="#")
+                            img(src="img/search.png")
+                        li: a(href="#")
+                            img(src="img/bag.png")    
+            section#section1.bg-odd
+                .row
+                    .title
+                        h1 iPad Pro
+                        .inf Super. Computation.
+                        .inf In two sizes.
+                        ul
+                            li: a(href="") Learn more >
+                            li: a(href="") Buy >
+                        .img    
+                            img(src="img/phone.jpg")
+                            img(src="img/phone.jpg")
+            section#section2.bg-even
+                .row
+                    .title
+                        .heading Apple Pencil
+                        .inf for iPad Pro
+                        ul
+                            li: a(href="") Learn more >
+                            li: a(href="") Buy >
+                        .heading Smart Keyboard
+                        .inf for iPad Pro
+                        ul
+                            li: a(href="") Learn more >
+                            li: a(href="") Buy >
+            section#section3.bg-full
+                .row
+                    .title
+                        .heading iPad
+                        .inf Flat-out fun.
+                        .inf Starting at $329
+                        ul
+                            li: a(href="") Learn more >
+                            li: a(href="") Buy >
+                    .img    
+                            img(src="") 
+            section#section4.bg-even
+                .row
+                    .title.title1
+                        img(src="logo")
+                        .heading Over a million apps designer for iPad.
+                        p The App Store has over a million apps specifically designed for the big, beautiful Retina display of your iPad.* So whatever you love to do, there’s an iPad app to help you do it.
+                        a Visit the App Store >
+                        img(src="")
+                    .title.title1
+                        img(src="logo")
+                        .heading Swift Playgrounds
+                        p Learn serious code on your iPad. In a seriously fun way.
+                        a Learn more >
+                        img(src="")
+            section#section5.bg-odd
+                .row
+                    .title.title1
+                        img(src="logo")
+                        .heading More personal. More powerful. More playful.
+                        p All the things you love to do are more expressive, more dynamic, and more fun than ever with iOS 10.
+                        a Learn more >
+            section#section6.bg-odd
+                .row
+                    .compare
+                        .heading Compare iPad models.
+                        a Find the best iPad for you >
+                        img(src="")
+                    .compare
+                        img(src="")
+            include ../partials/footer.pug
